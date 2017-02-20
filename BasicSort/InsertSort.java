@@ -22,7 +22,7 @@ public class InsertSort {
 			for (j = i; j > 0 && target < nums[j - 1]; j--) {//除非比前面所有的都小，否则只要前面的比他大，就将前一个元素右移一位;j--继续和再前一个值比较;
 				nums[j] = nums[j - 1];
 			}
-			nums[j] = target;//j--后，将原来的较大值用一开始设定的target填坑，保持数组元素不变；
+			nums[j] = target;//j--后，当前j所在的位置就是target应该在的位置，将target值赋给他；
 		}
 	}
 
